@@ -15,7 +15,6 @@ with open(budget_data) as csvfile:
 
 
     for rows in csvreader:
-        print(rows)
         profit.append(int(rows[1]))
         months += 1
 
@@ -28,7 +27,7 @@ with open(budget_data) as csvfile:
     greatest_dec = min(change)   
     avg_change = sum(change) / len(change)
 
-analysis = os.path.join("python-challenge","pybank","Analysis", "analysis.csv")
+analysis = os.path.join("python-challenge","pybank","Analysis", "pybank_analysis.csv")
 
 with open(analysis, 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=",")

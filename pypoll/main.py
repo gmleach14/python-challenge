@@ -35,7 +35,7 @@ with open(election_data) as csvfile:
     index = num_votes.index(winner)
     winning_candidate = candidates[index]
 
-analysis = os.path.join("python-challenge","pypoll","Analysis", "analysis.csv")
+analysis = os.path.join("python-challenge","pypoll","Analysis", "pypoll_analysis.csv")
 
 with open(analysis, 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=",")
